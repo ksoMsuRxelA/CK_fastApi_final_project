@@ -2,6 +2,7 @@
 from fastapi import FastAPI
 
 from app.config import get_settings
+from app.routes import auth as auth_routes
 
 settings = get_settings()
 
@@ -10,6 +11,8 @@ app = FastAPI(
     description="REST API для планирования учебной траектории студента",
     version="0.1.0",
 )
+
+app.include_router(auth_routes.router)
 
 
 @app.get("/", tags=["health"])

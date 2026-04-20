@@ -6,6 +6,7 @@ from app.schemas.enrollment import (
     EnrollmentUpdate,
 )
 from app.schemas.prerequisite import PrerequisiteCreate, PrerequisiteRead
+from app.schemas.token import Token
 from app.schemas.user import UserCreate, UserLogin, UserRead
 
 __all__ = [
@@ -17,6 +18,7 @@ __all__ = [
     "EnrollmentUpdate",
     "PrerequisiteCreate",
     "PrerequisiteRead",
+    "Token",
     "UserCreate",
     "UserLogin",
     "UserRead",
