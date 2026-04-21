@@ -3,6 +3,7 @@ from fastapi import FastAPI
 
 from app.config import get_settings
 from app.routes import auth as auth_routes
+from app.routes import courses as courses_routes
 
 settings = get_settings()
 
@@ -13,6 +14,7 @@ app = FastAPI(
 )
 
 app.include_router(auth_routes.router)
+app.include_router(courses_routes.router)
 
 
 @app.get("/", tags=["health"])
