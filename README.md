@@ -134,4 +134,4 @@ HLF (Highest Level First):
 
 ## Автор
 
-Icarus
+Ruslan Moskvitin
