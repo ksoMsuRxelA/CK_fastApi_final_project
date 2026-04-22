@@ -6,6 +6,12 @@ from app.schemas.enrollment import (
     EnrollmentUpdate,
 )
 from app.schemas.prerequisite import PrerequisiteCreate, PrerequisiteRead
+from app.schemas.study_plan import (
+    PlannedCourseRead,
+    SemesterRead,
+    StudyPlanRequest,
+    StudyPlanResponse,
+)
 from app.schemas.token import Token
 from app.schemas.user import UserCreate, UserLogin, UserRead
 
@@ -16,8 +22,12 @@ __all__ = [
     "EnrollmentCreate",
     "EnrollmentRead",
     "EnrollmentUpdate",
+    "PlannedCourseRead",
     "PrerequisiteCreate",
     "PrerequisiteRead",
+    "SemesterRead",
+    "StudyPlanRequest",
+    "StudyPlanResponse",
     "Token",
     "UserCreate",
     "UserLogin",
