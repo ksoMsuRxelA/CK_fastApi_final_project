@@ -1,0 +1,26 @@
+[MASTER]
+ignore=migrations,tests,__pycache__
+disable=
+    too-few-public-methods,
+    missing-module-docstring,
+    duplicate-code,
+    too-many-arguments,
+    too-many-positional-arguments,
+    too-many-locals,
+    broad-exception-caught,
+    import-outside-toplevel,
+    redefined-builtin,
+    fixme
+
+[FORMAT]
+max-line-length=100
+
+[DESIGN]
+max-args=8
+max-attributes=10
+
+[BASIC]
+good-names=i,j,k,e,_,id,pk,db
+
+[SIMILARITIES]
+min-similarity-lines=10
